@@ -10,10 +10,9 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - zip -r site.zip ./*
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - site.zip
+    - ./*
